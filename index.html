@@ -155,9 +155,13 @@ html,body{ background:#020611; height:100%; overflow:hidden;
 
 /* ======== logo principal ======== */
 .logo-wrap{
-  position:relative; width:8.6vw; height:8.6vw; min-width:104px; min-height:104px;
+  position:relative; width:5.4vw; height:5.4vw; min-width:68px; min-height:68px;
   perspective:900px;
 }
+/* cabecera/pie más compactos: más alto para el menú (no cambia el estilo) */
+main.h-screen{ padding-top:1.1vh; padding-bottom:1.1vh; }
+header.item{ padding-bottom:.8vh; }
+footer.item{ padding-top:.8vh; }
 /* anillo neón giratorio alrededor (mask simple + rotate) */
 .logo-wrap::before{
   content:''; position:absolute; inset:-7%; border-radius:50%;
